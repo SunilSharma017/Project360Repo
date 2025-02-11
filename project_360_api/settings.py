@@ -63,7 +63,7 @@ SSH_USER = 'ubuntu'
 SSH_PRIVATE_KEY_PATH = os.path.join(BASE_DIR, 'keys','data.pem')
 
 # MySQL configuration
-MYSQL_HOST = '10.10.0.52'
+MYSQL_HOST = '3.6.150.169'
 MYSQL_PORT = 3306
 MYSQL_USER = 'kepnath'
 MYSQL_PASSWORD = '@#Kepnath@2024'
