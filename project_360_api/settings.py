@@ -89,7 +89,7 @@ DATABASES = {
         'NAME': os.getenv(MYSQL_DB,'haqdarshak-aggregates'),
         'USER': os.getenv(MYSQL_USER,'kepnath'),
         'PASSWORD': os.getenv(MYSQL_PASSWORD,'@#Kepnath@2024'),
-        'HOST': os.getenv(MYSQL_HOST,'localhost'),
+        'HOST': "127.0.0.1",
         'PORT': tunnel.local_bind_port or 3306
     }
 }
