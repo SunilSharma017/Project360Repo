@@ -86,11 +86,11 @@ tunnel.start()
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.getenv(MYSQL_DB,'haqdarshak-aggregates'),
-        'USER': os.getenv(MYSQL_USER,'kepnath'),
-        'PASSWORD': os.getenv(MYSQL_PASSWORD,'@#Kepnath@2024'),
-        'HOST': "127.0.0.1",
-        'PORT': tunnel.local_bind_port or 3306
+        'NAME': MYSQL_DB,
+        'USER': MYSQL_USER,
+        'PASSWORD':MYSQL_PASSWORD,
+        'HOST': MYSQL_HOST,
+        'PORT': tunnel.local_bind_port or MYSQL_PORT
     }
 }
 
