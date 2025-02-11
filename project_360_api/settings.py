@@ -90,11 +90,11 @@ DATABASES = {
         'USER': os.getenv(MYSQL_USER,'kepnath'),
         'PASSWORD': os.getenv(MYSQL_PASSWORD,'@#Kepnath@2024'),
         'HOST': os.getenv(MYSQL_HOST,'localhost'),
-         'PORT': tunnel.local_bind_port or 3306
+        'PORT': tunnel.local_bind_port or 3306
     }
 }
 
-atexit.register(tunnel.stop)
+# atexit.register(tunnel.stop)
 
 
 
